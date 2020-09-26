@@ -27,6 +27,7 @@
     },
     "parser_error": true,
     "unknown_types": true,
+    "global_class": true,
     "check_syntax": true,
     "functional_writing": true,
     "obsolete_statement": {
