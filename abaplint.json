@@ -12,13 +12,13 @@
   "rules": {
     "indentation": true,
     "keyword_case": true,
-
     "when_others_last": true,
     "avoid_use": {
       "define": true,
       "execSQL": true,
       "kernelCall": true,
       "communication": true,
+      "describeLines": true,
       "systemCall": true,
       "break": true,
       "statics": true,
@@ -34,6 +34,10 @@
       "compute": true,
       "requested": true,
       "setExtended": true,
+      "withHeaderLine": true,
+      "fieldSymbolStructure": true,
+      "load": true,
+      "typePools": true,
       "occurs": true,
       "add": false,
       "divide": false,
