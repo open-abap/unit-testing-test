@@ -5,6 +5,11 @@ ENDCLASS.
 
 CLASS ltcl_test IMPLEMENTATION.
   METHOD test.
-    cl_abap_unit_assert=>assert_equals( act = 'Y' exp = 'X' ).
+    DATA cut TYPE REF TO zcl_ret.
+    CREATE OBJECT cut.
+
+    cl_abap_unit_assert=>assert_equals(
+      act = 'Y'
+      exp = cut->run( ) ).
   ENDMETHOD.
 ENDCLASS.
